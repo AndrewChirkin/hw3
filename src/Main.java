@@ -1,17 +1,25 @@
 public class Main {
     public static void main(String[] args) {
-        int age = 666;
-        if (age >= 18) {
-            System.out.println("Поздравляю с совершеннолетием!");
+        int one = 7;
+        int two = 9;
+        int tree = 11;
+        if (one > two && one > tree) {
+            System.out.println("Число " + one + " - самое большое!");
         }
-        if (age < 18) {
-            System.out.println("Возраст совершеннолетия не наступил, нужно подождать!");
-        }
+            else {
+                if (two > tree){
+                    System.out.println("Число " + two + " - самое большое!");
+
+                }else {
+                    System.out.println("Число " + tree + " - самое большое!");
+                }
+            }
 
 
-
-
-
-        System.out.println();
-    }
 }
+        }
+
+
+
+
+
