@@ -1,20 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int one = 7;
-        int two = 9;
-        int tree = 11;
-        if (one > two && one > tree) {
-            System.out.println("Число " + one + " - самое большое!");
+        int iOS = 0;
+        int Android = 1;
+        int clientOS = 0;
+        if(clientOS == iOS){
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        }else {
+            System.out.println("Установите версию приложения для Android по ссылке");
+
         }
-            else {
-                if (two > tree){
-                    System.out.println("Число " + two + " - самое большое!");
-
-                }else {
-                    System.out.println("Число " + tree + " - самое большое!");
-                }
-            }
-
 
 }
         }
