@@ -1,9 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        int year = 2000;
-        if (year% 4 == 0 && year% 100 != 0 || year% 400 == 0) {
-            System.out.println("Год вискосный!");
-        }else System.out.println("Год невисокосный!");
+        int deliveryDistance = 95;
+        double daysDelivery;
+        int distancePenality = 40;
+        daysDelivery = (deliveryDistance - 61) / distancePenality + 3;
+        double result = Math.ceil(daysDelivery);
+        if(deliveryDistance <= 20) {
+            System.out.println("Потребуется один день доставки!");
+        } else if(deliveryDistance < 61 && deliveryDistance > 20){
+            System.out.println("Потребуется 2 дня доставки!");
+        } else {
+            System.out.println("Потребуется " + daysDelivery + " дней на доставку.");
+        }
     }
         }
 
