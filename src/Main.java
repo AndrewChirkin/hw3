@@ -1,21 +1,25 @@
 public class Main {
     public static void main(String[] args) {
-        int age = 100;
-        if (age < 5) {
-            System.out.println("Возраст слишком мал, кататься нельзя.");
-        }
-        if (age >= 5 && age <= 14) {
-            System.out.println("Данный ребёнок может кататься только в сопровождении взрослого.");
-        }
-        if (age > 14) {
-            System.out.println("Можно кататься без ограничений.");
-        }
+        int one = 7;
+        int two = 9;
+        int tree = 1;
+        if (one > two && one > tree) {
+            System.out.println("Число " + one + " - самое большое!");
+            if (tree > two) {
+                System.out.println("Число " + tree + " - самое большое!");
+            }
+        } else if (tree > two) {
+            System.out.println("Число " + tree + " - самое большое!");
 
+        } else if(two >tree)
 
-
-
-
-
-        System.out.println();
+    {
+        System.out.println("Число " + two + " - самое большое!");
     }
 }
+        }
+
+
+
+
+
